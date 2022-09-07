@@ -3,7 +3,7 @@ const app = express();
 const dfff = require("dialogflow-fulfillment");
 const axios = require("axios");
 const fs = require("fs");
-const port = 8015;
+const port = process.env.PORT || 8080;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
